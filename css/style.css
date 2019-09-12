@@ -33,7 +33,7 @@ h3 {
 }
 
 .nav p {
-    text-align: justify !important;
+    text-align: justify;
     text-align: left;
     padding: 10px 50px;
     margin-bottom: -15px;
