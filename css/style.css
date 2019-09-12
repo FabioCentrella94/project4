@@ -1,131 +1,3 @@
-@media only screen and (min-width: 481px) and (max-width: 800px) {
-    .nav {
-        grid-column: 1 / -1;
-     }
-
-     #freelanceunderline {
-         display: inline-block;
-         margin-left: -482px !important;
-     }
-
-     .right-info {
-         margin-top: 40px;
-         margin-left: -280px;
-     }
-
-     .homedivider {
-        margin-right: -100px !important;
-     }
-
-     .content-box br ~ i {
-         margin-top: 195px !important;
-     }
-
-     .left-info br ~ span {
-         margin-top: 60px;
-     }
-
-     .right-info br ~ h4 {
-         margin-top: 60px;
-    }
-
-    .reference {
-        margin-top: 0px;
-        margin-left: 35px;
-    }
-
-    .right-info>.reference {
-        margin-left: 250px;
-        margin-top: -50px !important;
-    }
-
-    #gymdate {
-        margin-top: 60px;
-    }
-
-    #jobdescription {
-        margin-bottom: 18px;
-    }
-
-    #gymdateicon {
-        margin-top: 195px;
-        margin-bottom: 140px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .nav {
-        grid-column: 1 / -1;
-     }
-
-     h1 {
-         padding-left: 40px;
-         margin-left: -0.2px !important;
-     }
-
-     h1 ~ h4 {
-        padding-left: 42px;
-        margin-left: -0.2px !important;  
-     }
-
-     #freelanceunderline {
-         display: inline-block;
-         margin-left: -220px !important;
-     }
-
-     .homedivider {
-         margin-right: 40px !important;
-     }
-
-     .right-info {
-         margin-top: 40px;
-         margin-left: -280px;
-     }
-
-     .content-box br ~ i {
-         margin-top: 265px !important;
-     }
-
-     .left-info br ~ span {
-         margin-top: 130px;
-     }
-
-     .right-info br ~ h4 {
-         margin-top: 60px;
-    }
-
-    .right-info>.reference {
-        margin-top: 140px !important;
-        margin-left: -104px;
-    }
-
-    .reference {
-        margin-top: 0px;
-        margin-left: 35px;
-    }
-
-    .nav p {
-        width: auto !important;
-    }
-
-    br ~ p {
-        min-width: auto !important;
-    }
-
-    #gymdate {
-        margin-top: 150px;
-    }
-
-    #jobdescription {
-        margin-bottom: 18px;
-    }
-
-    #gymdateicon {
-        margin-top: 285px !important;
-        margin-bottom: 80px;
-    }
-}
-
 .container {
     display: grid;
     grid-template-rows: repeat(4, 25%);
@@ -280,5 +152,132 @@ br ~ p {
     margin-top: 5px;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    .nav {
+        grid-column: 1 / -1;
+     }
+
+     #freelanceunderline {
+         display: inline-block;
+         margin-left: -482px !important;
+     }
+
+     .right-info {
+         margin-top: 40px;
+         margin-left: -280px;
+     }
+
+     .homedivider {
+        margin-right: -100px !important;
+     }
+
+     .content-box br ~ i {
+         margin-top: 195px !important;
+     }
+
+     .left-info br ~ span {
+         margin-top: 60px;
+     }
+
+     .right-info br ~ h4 {
+         margin-top: 60px;
+    }
+
+    .reference {
+        margin-top: 0px;
+        margin-left: 35px;
+    }
+
+    .right-info>.reference {
+        margin-left: 250px;
+        margin-top: -50px !important;
+    }
+
+    #gymdate {
+        margin-top: 60px;
+    }
+
+    #jobdescription {
+        margin-bottom: 18px;
+    }
+
+    #gymdateicon {
+        margin-top: 195px;
+        margin-bottom: 140px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav {
+        grid-column: 1 / -1;
+     }
+
+     h1 {
+         padding-left: 40px;
+         margin-left: -0.2px !important;
+     }
+
+     h1 ~ h4 {
+        padding-left: 42px;
+        margin-left: -0.2px !important;  
+     }
+
+     #freelanceunderline {
+         display: inline-block;
+         margin-left: -220px !important;
+     }
+
+     .homedivider {
+         margin-right: 40px !important;
+     }
+
+     .right-info {
+         margin-top: 40px;
+         margin-left: -280px;
+     }
+
+     .content-box br ~ i {
+         margin-top: 265px !important;
+     }
+
+     .left-info br ~ span {
+         margin-top: 130px;
+     }
+
+     .right-info br ~ h4 {
+         margin-top: 60px;
+    }
+
+    .right-info>.reference {
+        margin-top: 140px !important;
+        margin-left: -104px;
+    }
+
+    .reference {
+        margin-top: 0px;
+        margin-left: 35px;
+    }
+
+    .nav p {
+        width: auto !important;
+    }
+
+    br ~ p {
+        min-width: auto !important;
+    }
+
+    #gymdate {
+        margin-top: 150px;
+    }
+
+    #jobdescription {
+        margin-bottom: 18px;
+    }
+
+    #gymdateicon {
+        margin-top: 285px !important;
+        margin-bottom: 80px;
+    }
+}
 
 
