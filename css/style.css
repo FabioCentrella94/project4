@@ -29,14 +29,13 @@
          margin-top: 60px;
     }
 
-    .reference {
-        margin-top: 0px;
-        margin-left: 35px;
+    .right-info>.reference {
+        margin-top: 140px !important;
+        margin-left: -104px;
     }
 
-    .right-info>.reference {
-        margin-left: 250px;
-        margin-top: -50px !important;
+    .reference {
+        margin-left: 35px;
     }
 
     #gymdate {
@@ -49,7 +48,6 @@
 
     #gymdateicon {
         margin-top: 195px;
-        margin-bottom: 140px;
     }
 }
 
@@ -71,10 +69,6 @@
      #freelanceunderline {
          display: inline-block;
          margin-left: -220px !important;
-     }
-
-     .homedivider {
-         margin-right: 40px !important;
      }
 
      .right-info {
@@ -100,7 +94,6 @@
     }
 
     .reference {
-        margin-top: 0px;
         margin-left: 35px;
     }
 
@@ -122,7 +115,6 @@
 
     #gymdateicon {
         margin-top: 285px !important;
-        margin-bottom: 80px;
     }
 }
 
@@ -279,9 +271,4 @@ br ~ p {
 
 .right-info>.reference {
     margin-top: 5px;
-}
-
-footer {
-    padding: 50px;
-    border-top: 2px solid black;
 }
