@@ -7,7 +7,6 @@
 body {
     max-width: 100% !important;
     margin: auto auto;
-    overflow-x: hidden;
 }
 
 * {
@@ -33,19 +32,20 @@ h3 {
 }
 
 .nav p {
-    text-align: left;
     text-align: justify;
     padding: 10px 50px;
     margin-bottom: -15px;
-    min-width: 350px;
 }
+
+.nav article {
+    text-align: justify;
+    padding: 10px 50px;
+    margin-bottom: 300px;
+}
+
 
 .nav>img {
     border-radius: 10000px;
-}
-
-#about {
-    margin-bottom: 300px;
 }
 
 h1 ~ h4 {
@@ -64,11 +64,11 @@ h1 {
     margin: 120px 0px -20px 50px;
 }
 
-#name {
+.name {
     color: rgba(255,179,0 ,1);
 }
 
-#freelanceunderline {
+.freelance-underline {
     margin: -25px 0px 145px 53px;
     border-color: rgba(255,179,0 ,1);
     width: 45px; 
@@ -83,7 +83,7 @@ h2>i {
     margin-right: 20px;
 }
 
-.homedivider {
+.home-divider {
     margin: -15px 75px 25px 45px;
     border-color: rgba(255,179,0 ,1);
 }
@@ -133,7 +133,7 @@ span {
 br ~ p {
     text-align: left;
     font-size: 15px;
-    min-width: 450px;
+    max-width: 500px;
 }
 
 .content-box>span {
@@ -146,7 +146,8 @@ br ~ p {
 
 .reference {
     text-align: left;
-    margin-right: -70px;
+    margin-right: -100px;
+    min-width: 180px;
 }
 
 .right-info>.reference {
@@ -154,18 +155,25 @@ br ~ p {
 }
 
 footer {
-    padding: 50px;
+    font-size: 13px;
+    padding: 5px 60px 20px 0px;
     border-top: 2px solid black;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
+    .container {    
+        grid-template-rows: repeat(4, 700px);
+    }
+
     .nav {
         grid-column: 1 / -1;
+        grid-row: 1 / 3;
+        max-height: 1200px;
      }
 
-     #freelanceunderline {
+     .freelance-underline {
          display: inline-block;
-         margin-left: -482px !important;
+         margin-left: -465px !important;
      }
 
      .right-info {
@@ -173,7 +181,7 @@ footer {
          margin-left: -280px;
      }
 
-     .homedivider {
+     .home-divider {
         margin-right: -100px !important;
      }
 
@@ -199,22 +207,26 @@ footer {
         margin-top: -50px !important;
     }
 
-    #gymdate {
+    #gym-date {
         margin-top: 60px;
     }
 
-    #jobdescription {
+    #job-description {
         margin-bottom: 18px;
     }
 
-    #gymdateicon {
+    #gym-date-icon {
         margin-top: 195px;
         margin-bottom: 140px;
     }
+
+    footer {
+        margin-top: 50px;
+    }
 }
 
-@media only screen and (max-width: 480px) {
-    .container {
+@media only screen and (max-width: 480px) { 
+    .container {    
         grid-template-rows: repeat(4, 700px);
     }
 
@@ -234,12 +246,12 @@ footer {
         margin-left: -0.2px !important;  
      }
 
-     #freelanceunderline {
+     .freelance-underline {
          display: inline-block;
          margin-left: -220px !important;
      }
 
-     .homedivider {
+     .home-divider {
          margin-right: 40px !important;
      }
 
@@ -262,7 +274,7 @@ footer {
 
     .right-info>.reference {
         margin-top: 140px !important;
-        margin-left: -104px;
+        margin-left: -100px;
     }
 
     .reference {
@@ -278,20 +290,21 @@ footer {
         min-width: auto !important;
     }
 
-    #gymdate {
+    #gym-date {
         margin-top: 150px;
     }
 
-    #jobdescription {
+    #job-description {
         margin-bottom: 18px;
     }
 
-    #gymdateicon {
+    #gym-date-icon {
         margin-top: 285px !important;
         margin-bottom: 80px;
     }
 
     footer {
         margin-top: 500px;
+        padding-left: 50px;
     }
 }
