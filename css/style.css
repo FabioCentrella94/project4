@@ -280,3 +280,8 @@ br ~ p {
 .right-info>.reference {
     margin-top: 5px;
 }
+
+footer {
+    padding: 50px;
+    border-top: 2px solid black;
+}
