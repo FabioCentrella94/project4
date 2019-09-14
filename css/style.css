@@ -7,6 +7,7 @@
 body {
     max-width: 100% !important;
     margin: auto auto;
+    overflow-x: hidden;
 }
 
 * {
@@ -84,7 +85,7 @@ h2>i {
 }
 
 .home-divider {
-    margin: -15px 75px 25px 45px;
+    margin: -15px 90px 25px 45px;
     border-color: rgba(255,179,0 ,1);
 }
 
@@ -133,7 +134,7 @@ span {
 br ~ p {
     text-align: left;
     font-size: 15px;
-    max-width: 500px;
+    min-width: 410px;
 }
 
 .content-box>span {
@@ -155,7 +156,7 @@ br ~ p {
 }
 
 footer {
-    font-size: 13px;
+    font-size: 11px;
     padding: 5px 60px 20px 0px;
     border-top: 2px solid black;
 }
