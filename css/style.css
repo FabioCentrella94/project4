@@ -7,7 +7,6 @@
 body {
     max-width: 100% !important;
     margin: auto auto;
-    overflow-x: hidden;
 }
 
 * {
@@ -134,7 +133,7 @@ span {
 br ~ p {
     text-align: left;
     font-size: 15px;
-    min-width: 410px;
+    max-width: 500px;
 }
 
 .content-box>span {
@@ -156,20 +155,9 @@ br ~ p {
 }
 
 footer {
-    margin-right: -100px;
     font-size: 13px;
     padding: 5px 60px 20px 0px;
     border-top: 2px solid black;
-}
-
-@media only screen and (min-width: 801px) and (max-width: 1024px) {
-    footer {
-        margin-right: -400px;
-    }
-
-    body {
-        overflow-x: auto;
-    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 800px) {
@@ -317,6 +305,6 @@ footer {
 
     footer {
         margin-top: 500px;
-        margin-left: -40px;
+        padding-left: 50px;
     }
 }
