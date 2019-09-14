@@ -157,7 +157,7 @@ br ~ p {
 
 footer {
     font-size: 11px;
-    padding: 5px 60px 20px 0px;
+    padding: 5px;
     border-top: 2px solid black;
 }
 
@@ -183,7 +183,7 @@ footer {
      }
 
      .home-divider {
-        margin-right: 40px !important;
+        margin-right: 10px !important;
      }
 
      .content-box br ~ i {
@@ -226,13 +226,14 @@ footer {
     }
 
     footer {
-        margin-top: 90px;
+        margin: 90px 0px 0px 0px;
     }
 }
 
 @media only screen and (max-width: 480px) { 
-    .container {    
+    .container {  
         grid-template-rows: repeat(4, 700px);
+        margin-right: -50px;
     }
 
     .nav {
@@ -309,7 +310,18 @@ footer {
     }
 
     footer {
-        margin-top: 500px;
-        padding-left: 50px;
+        margin-top: 480px;
+        margin-right: -50px;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    @-moz-document url-prefix() {
+        .container {
+        margin-right: auto;
+        }
+        footer {
+            margin-right: auto;
+        }
+    } 
+}  
