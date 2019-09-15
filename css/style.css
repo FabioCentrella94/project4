@@ -1,13 +1,12 @@
 .container {
     display: grid;
     grid-template-rows: repeat(4, 25%);
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr; 
 }
 
 body {
-    max-width: 100% !important;
+    width: 100% !important;
     margin: auto auto;
-    overflow-x: hidden;
 }
 
 * {
@@ -69,10 +68,9 @@ h1 {
     color: rgba(255,179,0 ,1);
 }
 
-.freelance-underline {
-    margin: -25px 0px 145px 53px;
-    border-color: rgba(255,179,0 ,1);
-    width: 45px; 
+h4>span {
+    border-bottom: 2px solid rgba(255,179,0 ,1);
+    margin-bottom: 125px;
 }
 
 h2 {
@@ -85,7 +83,8 @@ h2>i {
 }
 
 .home-divider {
-    margin: -15px 90px 25px 45px;
+    width: 58vw;
+    margin: -15px 0px 25px 45px;
     border-color: rgba(255,179,0 ,1);
 }
 
@@ -102,7 +101,7 @@ h2>i {
 .right-info { 
     float: right;
     text-align: left;
-    padding: 10px 100px 0px 300px;
+    padding: 10px 150px 0px 300px;
 }
 
 .date {
@@ -134,7 +133,8 @@ span {
 br ~ p {
     text-align: left;
     font-size: 15px;
-    min-width: 410px;
+    min-width: 380px;
+    max-width: 380px;
 }
 
 .content-box>span {
@@ -143,6 +143,15 @@ br ~ p {
 
  .content-box br ~ i{
     margin-top: 132px;
+}
+
+#gym-date {
+    margin-top: 18px;
+}
+
+#gym-date-icon {
+    margin-top: 150px;
+    margin-bottom: 145px;
 }
 
 .reference {
@@ -156,14 +165,21 @@ br ~ p {
 }
 
 footer {
-    font-size: 11px;
+    margin-right: -50px;
     padding: 5px;
+    font-size: 11px;
     border-top: 2px solid black;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) { 
+
+    body {
+        overflow-x: hidden;
+    }
+
     .container {    
         grid-template-rows: repeat(4, 700px);
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
 
     .nav {
@@ -172,18 +188,13 @@ footer {
         max-height: 1250px;
      }
 
-     .freelance-underline {
-         display: inline-block;
-         margin-left: -420px !important;
-     }
-
      .right-info {
          margin-top: 40px;
          margin-left: -280px;
      }
 
      .home-divider {
-        margin-right: 10px !important;
+       width: 87vw;
      }
 
      .content-box br ~ i {
@@ -199,7 +210,8 @@ footer {
     }
 
     br ~ p {
-        min-width: 390px !important;
+        max-width: 460px;
+        min-width: 410px;
     }
 
     .reference {
@@ -208,8 +220,8 @@ footer {
     }
 
     .right-info>.reference {
-        margin-left: 150px;
-        margin-top: -50px !important;
+        margin-left: 160px;
+        margin-top: -50px;
     }
 
     #gym-date {
@@ -224,16 +236,19 @@ footer {
         margin-top: 195px;
         margin-bottom: 140px;
     }
-
-    footer {
-        margin: 90px 0px 0px 0px;
-    }
 }
 
-@media only screen and (max-width: 480px) { 
-    .container {  
-        grid-template-rows: repeat(4, 700px);
-        margin-right: -50px;
+
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(4, 730px);
     }
 
     .nav {
@@ -252,18 +267,13 @@ footer {
         margin-left: -0.2px !important;  
      }
 
-     .freelance-underline {
-         display: inline-block;
-         margin-left: -220px !important;
-     }
-
      .home-divider {
-         margin-right: 40px !important;
+        width: 80vw; 
      }
 
      .right-info {
-         margin-top: 40px;
-         margin-left: -280px;
+        margin-top: 40px;
+        margin-left: -280px;
      }
 
      .content-box br ~ i {
@@ -293,7 +303,8 @@ footer {
     }
 
     br ~ p {
-        min-width: auto !important;
+        min-width: 170px;
+        max-width: 170px;
     }
 
     #gym-date {
@@ -308,20 +319,4 @@ footer {
         margin-top: 285px !important;
         margin-bottom: 80px;
     }
-
-    footer {
-        margin-top: 480px;
-        margin-right: -50px;
-    }
 }
-
-@media only screen and (max-width: 480px) {
-    @-moz-document url-prefix() {
-        .container {
-        margin-right: auto;
-        }
-        footer {
-            margin-right: auto;
-        }
-    } 
-}  
