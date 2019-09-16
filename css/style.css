@@ -157,8 +157,7 @@ br ~ p {
 }
 
 #gym-date-icon {
-    margin-top: 150px;
-    margin-bottom: 145px;
+    margin: 150px 0px 145px 0px;
 }
 
 .reference {
@@ -195,8 +194,7 @@ footer {
      }
 
      .right-info {
-        margin-top: 40px;
-        margin-left: -280px;
+        margin: 40px 0px 0px -280px;
      }
 
      .home-divider {
@@ -216,22 +214,20 @@ footer {
     }
 
     br ~ p {
-        max-width: 460px;
-        min-width: 410px;
+        max-width: 400px;
+        min-width: 400px;
     }
 
     .reference {
-        margin-top: 0px;
-        margin-left: 35px;
+        margin: 0px 0px 0px 35px;
     }
 
     .right-info>.reference {
-        margin-left: 160px;
-        margin-top: -50px;
+        margin: -50px 0px 0px 40px;
     }
 
     #gym-date {
-        margin-top: 60px;
+        margin-top: 78px;
     }
 
     #job-description {
@@ -239,17 +235,16 @@ footer {
     }
 
     #gym-date-icon {
-        margin-top: 195px;
-        margin-bottom: 140px;
+        margin: 210px 0px 140px 0px;
     }
 
     footer {
-        margin: 70px 70px 0px 50px;
+        margin: 100px 70px 0px 50px;
         min-width: 400px;
     }
 
     _:-ms-lang(x), footer {
-        margin-top: -40px;
+        margin-top: -10px;
     }
 
 }
@@ -288,8 +283,7 @@ footer {
      }
 
      .right-info {
-        margin-top: 40px;
-        margin-left: -280px;
+        margin: 40px 0px 0px -280px;
      }
 
      .content-box br ~ i {
@@ -305,13 +299,11 @@ footer {
     }
 
     .right-info>.reference {
-        margin-top: 140px;
-        margin-left: -100px;
+        margin: 140px 0px 0px -200px;
     }
 
     .reference {
-        margin-top: 0px;
-        margin-left: 35px;
+        margin: 0px 0px 0px 35px;
     }
 
     br ~ p {
@@ -328,8 +320,7 @@ footer {
     }
 
     #gym-date-icon {
-        margin-top: 285px !important;
-        margin-bottom: 80px;
+        margin: 285px 0px 80px 0px !important;
     }
 
     footer {
@@ -338,7 +329,7 @@ footer {
     }
     
     _:-ms-lang(x), footer {
-        margin-top: -30px;
+        margin-top: -10px;
     }
 
 }
