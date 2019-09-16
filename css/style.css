@@ -107,6 +107,10 @@ h2>i {
     padding: 10px 150px 0px 300px;
 }
 
+_:-ms-lang(x), .right-info {
+    padding-right: 600px;
+}
+
 .date {
     display: inline-block;
     margin: 0px -300px 115px 20px;
@@ -145,11 +149,11 @@ br ~ p {
 }
 
  .content-box br ~ i{
-    margin-top: 132px;
+    margin-top: 133px;
 }
 
 #gym-date {
-    margin-top: 18px;
+    margin-top: 19px;
 }
 
 #gym-date-icon {
@@ -168,9 +172,8 @@ br ~ p {
 }
 
 footer {
-    margin-right: -50px;
-    padding: 5px;
     font-size: 11px;
+    padding: 5px;
     border-top: 2px solid black;
 }
 
@@ -239,6 +242,16 @@ footer {
         margin-top: 195px;
         margin-bottom: 140px;
     }
+
+    footer {
+        margin: 70px 70px 0px 50px;
+        min-width: 400px;
+    }
+
+    _:-ms-lang(x), footer {
+        margin-top: -40px;
+    }
+
 }
 
 
@@ -318,4 +331,14 @@ footer {
         margin-top: 285px !important;
         margin-bottom: 80px;
     }
+
+    footer {
+        margin: 490px 50px 0px 50px;
+        min-width: 200px;
+    }
+    
+    _:-ms-lang(x), footer {
+        margin-top: -30px;
+    }
+
 }
