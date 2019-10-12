@@ -1,0 +1,145 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 30% 65%; 
+}
+
+.nav {
+    background-color: $main-color;
+    padding-top: 60px;
+    grid-row: 1 / -1;
+
+    &__profile-picture {
+        border-radius: 10000px;
+    }
+
+    &__section-header {
+        background-color: rgba(38,50,56 ,1);
+        color: $main-color;
+        padding: 5px 0px;
+        margin-top: 60px;
+    }
+
+    &__contact {
+        text-align: justify;
+        padding: 10px 50px;
+        margin-bottom: -15px;
+    }
+
+    &__about {
+        text-align: justify;
+        padding: 10px 50px;
+        margin-bottom: 300px;
+    }
+
+    &__hobby-image {
+        font-size: 50px;
+        margin: 30px 30px;
+    }
+}
+
+.home {
+    padding-bottom: 40px;
+    width: 95%;
+
+    &__header {
+        text-align: left;
+        margin: 120px 0px -20px 50px;
+
+        &--color-name {
+            color: $main-color;
+        }
+    }
+
+    &__job-name {
+        font-size: 19px;
+        text-align: left;
+        margin: 20px 0 170px 51px;
+
+        &--underline {
+            border-bottom: 2px solid $main-color;
+        }
+    }
+
+    &__section-header {
+        text-align: left;
+
+        &--image {
+            margin: 0 20px 0 50px;
+        }
+    }
+
+    &__section-divider {
+        width: 100%;
+        margin: -20px 0px 25px 45px;
+        border-color: $main-color;
+    }
+
+    .content-box {
+        display: flex;
+
+        &__date-icon-span {
+            margin: 30px 0 0 70px;
+
+            &--date-icon {
+                margin: 0 0 130px 0;
+            }
+        }
+
+        .left-info {
+            float: left;
+            text-align: left;
+            margin: 20px 0 0 10px;
+
+            &__date {
+                display: inline-block;
+                margin: 0px -300px 115px 20px;
+                text-align: left
+            }
+
+            &__reference {
+                text-align: left;
+                margin: 0 0 0 50px;
+            }
+        }
+
+        .right-info {
+            float: right;
+            text-align: left;
+            padding: 30px 0 0 300px;
+
+            &__place {
+                text-align: left;
+                margin: 0px 0px 10px 0px;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 17px;
+                letter-spacing: 0.3px;
+            }
+        
+            &__role {
+                text-align: left;
+                font-size: 15px;
+                margin-bottom: -0.1px; 
+                letter-spacing: -0.3px;
+            }
+
+            &__description {
+                text-align: left;
+                font-size: 15px;
+                min-width: 420px;
+                max-width: 420px;
+            }
+
+            &__reference {
+                text-align: left;
+                margin: -10px 0 0 -150px;
+            }
+        }
+    } 
+}
+  
+
+
+
+

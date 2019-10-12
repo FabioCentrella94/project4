@@ -1,3 +1,137 @@
+html, body {
+  width: 100% !important;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  overflow-x: hidden;
+}
 
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+footer {
+  font-size: 11px;
+  padding: 5px;
+  border-top: 2px solid black;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: 30% 65%;
+}
+
+.nav {
+  background-color: #ffb300;
+  padding-top: 60px;
+  grid-row: 1/-1;
+}
+.nav__profile-picture {
+  border-radius: 10000px;
+}
+.nav__section-header {
+  background-color: #263238;
+  color: #ffb300;
+  padding: 5px 0px;
+  margin-top: 60px;
+}
+.nav__contact {
+  text-align: justify;
+  padding: 10px 50px;
+  margin-bottom: -15px;
+}
+.nav__about {
+  text-align: justify;
+  padding: 10px 50px;
+  margin-bottom: 300px;
+}
+.nav__hobby-image {
+  font-size: 50px;
+  margin: 30px 30px;
+}
+
+.home {
+  padding-bottom: 40px;
+  width: 95%;
+}
+.home__header {
+  text-align: left;
+  margin: 120px 0px -20px 50px;
+}
+.home__header--color-name {
+  color: #ffb300;
+}
+.home__job-name {
+  font-size: 19px;
+  text-align: left;
+  margin: 20px 0 170px 51px;
+}
+.home__job-name--underline {
+  border-bottom: 2px solid #ffb300;
+}
+.home__section-header {
+  text-align: left;
+}
+.home__section-header--image {
+  margin: 0 20px 0 50px;
+}
+.home__section-divider {
+  width: 100%;
+  margin: -20px 0px 25px 45px;
+  border-color: #ffb300;
+}
+.home .content-box {
+  display: flex;
+}
+.home .content-box__date-icon-span {
+  margin: 30px 0 0 70px;
+}
+.home .content-box__date-icon-span--date-icon {
+  margin: 0 0 130px 0;
+}
+.home .content-box .left-info {
+  float: left;
+  text-align: left;
+  margin: 20px 0 0 10px;
+}
+.home .content-box .left-info__date {
+  display: inline-block;
+  margin: 0px -300px 115px 20px;
+  text-align: left;
+}
+.home .content-box .left-info__reference {
+  text-align: left;
+  margin: 0 0 0 50px;
+}
+.home .content-box .right-info {
+  float: right;
+  text-align: left;
+  padding: 30px 0 0 300px;
+}
+.home .content-box .right-info__place {
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+.home .content-box .right-info__role {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: -0.1px;
+  letter-spacing: -0.3px;
+}
+.home .content-box .right-info__description {
+  text-align: left;
+  font-size: 15px;
+  min-width: 420px;
+  max-width: 420px;
+}
+.home .content-box .right-info__reference {
+  text-align: left;
+  margin: -10px 0 0 -150px;
+}
+
+/*# sourceMappingURL=style.css.map */
