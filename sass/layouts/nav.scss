@@ -1,0 +1,10 @@
+.nav {
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 100%;
+    @media only screen and (max-width: 800px) {
+        flex-flow: row;
+    }
+}
