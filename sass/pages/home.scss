@@ -1,10 +1,18 @@
+@import "../utils/variables";
+
 .container {
-    display: grid;
+    display: flex;
+    flex-flow: row;
+    height: auto;
     grid-template-rows: repeat(4, 25%);
-    grid-template-columns: 30% 65%; 
+    grid-template-columns: 30% 65%;
+    @media only screen and (max-width: 1024px) {
+        flex-flow: column;
+    }
 }
 
-.nav {
+.left-menu {
+    flex: 1;
     background-color: $main-color;
     padding-top: 60px;
     grid-row: 1 / -1;
@@ -13,8 +21,8 @@
         border-radius: 10000px;
     }
 
-    &__section-header {
-        background-color: rgba(38,50,56 ,1);
+    &__info-heading {
+        background-color: $secondary-color;
         color: $main-color;
         padding: 5px 0px;
         margin-top: 60px;
@@ -27,9 +35,9 @@
     }
 
     &__about {
-        text-align: justify;
-        padding: 10px 50px;
-        margin-bottom: 300px;
+       text-align: justify;
+       padding: 10px 50px;
+       margin-bottom: 300px;
     }
 
     &__hobby-image {
@@ -38,15 +46,16 @@
     }
 }
 
-.home {
+.right-menu {
+    flex: 2;
     padding-bottom: 40px;
     width: 95%;
 
-    &__header {
+    &__heading {
         text-align: left;
-        margin: 120px 0px -20px 50px;
+        margin: 120px 0px -20px 30px;
 
-        &--color-name {
+        &--name-color {
             color: $main-color;
         }
     }
@@ -54,38 +63,44 @@
     &__job-name {
         font-size: 19px;
         text-align: left;
-        margin: 20px 0 170px 51px;
+        margin: 20px 0 170px 31px;
 
         &--underline {
             border-bottom: 2px solid $main-color;
         }
     }
 
-    &__section-header {
+    &__info-heading {
         text-align: left;
-
-        &--image {
-            margin: 0 20px 0 50px;
-        }
     }
 
-    &__section-divider {
+    &__info-heading-image {
+        margin: 0 20px 0 50px;
+    }
+    
+
+    &__info-heading-underline {
         width: 100%;
         margin: -20px 0px 25px 45px;
-        border-color: $main-color;
+        
+            &--color {
+                border-color: $main-color;
+            }
     }
 
     .content-box {
         display: flex;
+        flex-flow: row wrap;
+        text-align: left;
 
-        &__date-icon-span {
-            margin: 30px 0 0 70px;
+        > span {
+            margin: 0 0 0 70px;
 
-            &--date-icon {
-                margin: 0 0 130px 0;
+            > .date-icon-1 {
+                margin: 30px 0 130px 0;
             }
         }
-
+  
         .left-info {
             float: left;
             text-align: left;
@@ -94,7 +109,7 @@
             &__date {
                 display: inline-block;
                 margin: 0px -300px 115px 20px;
-                text-align: left
+                text-align-last: left;
             }
 
             &__reference {

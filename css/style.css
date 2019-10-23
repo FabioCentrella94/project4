@@ -1,5 +1,6 @@
 html, body {
   width: 100% !important;
+  max-height: 100% !important;
   margin: 0 0 0 0 !important;
   padding: 0 0 0 0 !important;
   overflow-x: hidden;
@@ -10,106 +11,247 @@ html, body {
   text-align: center;
 }
 
+.btn {
+  font-size: 60px;
+  background-color: #263238;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #ffb300;
+}
+.btn :hover {
+  color: lawngreen;
+}
+.btn :visited {
+  color: #ffb300;
+}
+
+.nav {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100%;
+  position: fixed;
+}
+@media only screen and (max-width: 1024px) {
+  .nav {
+    flex-flow: row;
+    position: static;
+  }
+}
+
 footer {
   font-size: 11px;
   padding: 5px;
   border-top: 2px solid black;
 }
 
+.education-container {
+  display: flex;
+  flex-flow: row;
+  height: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .education-container {
+    flex-flow: column;
+  }
+}
+
+.header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex: 1 0 75px;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+}
+.header--background-color {
+  background-color: #ffb300;
+}
+
+.info {
+  flex: 7;
+  padding: 0 5% 3% 5%;
+}
+@media only screen and (max-width: 480px) {
+  .info {
+    z-index: 0;
+    padding-top: 25% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .info {
+    z-index: 0;
+    padding-top: 15%;
+  }
+}
+.info .heading__title {
+  text-align: left;
+}
+.info .heading__underline {
+  margin: -20px 0 0 0;
+}
+.info .heading__underline--color {
+  border-color: #ffb300;
+}
+.info .education {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 5% 0 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .info .education {
+    flex-flow: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .info .education__description {
+    margin: 1% 0 0 0;
+  }
+}
+.info .education__description > * {
+  text-align: justify;
+  min-width: 600px;
+}
+@media only screen and (max-width: 1024px) {
+  .info .education__description > * {
+    min-width: auto;
+  }
+}
+.info .education__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 300px;
+}
+.info .education__image > img {
+  height: 95%;
+  width: 90%;
+}
+@media only screen and (max-width: 1024px) {
+  .info .education__image > img {
+    width: 100%;
+  }
+}
+.info__education-divider {
+  margin: 6% 0 0 0;
+}
+.info__education-divider--color {
+  border-color: #ffb300;
+}
+
 .container {
-  display: grid;
+  display: flex;
+  flex-flow: row;
+  height: auto;
   grid-template-rows: repeat(4, 25%);
   grid-template-columns: 30% 65%;
 }
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-flow: column;
+  }
+}
 
-.nav {
+.left-menu {
+  flex: 1;
   background-color: #ffb300;
   padding-top: 60px;
   grid-row: 1/-1;
 }
-.nav__profile-picture {
+.left-menu__profile-picture {
   border-radius: 10000px;
 }
-.nav__section-header {
+.left-menu__info-heading {
   background-color: #263238;
   color: #ffb300;
   padding: 5px 0px;
   margin-top: 60px;
 }
-.nav__contact {
+.left-menu__contact {
   text-align: justify;
   padding: 10px 50px;
   margin-bottom: -15px;
 }
-.nav__about {
+.left-menu__about {
   text-align: justify;
   padding: 10px 50px;
   margin-bottom: 300px;
 }
-.nav__hobby-image {
+.left-menu__hobby-image {
   font-size: 50px;
   margin: 30px 30px;
 }
 
-.home {
+.right-menu {
+  flex: 2;
   padding-bottom: 40px;
   width: 95%;
 }
-.home__header {
+.right-menu__heading {
   text-align: left;
-  margin: 120px 0px -20px 50px;
+  margin: 120px 0px -20px 30px;
 }
-.home__header--color-name {
+.right-menu__heading--name-color {
   color: #ffb300;
 }
-.home__job-name {
+.right-menu__job-name {
   font-size: 19px;
   text-align: left;
-  margin: 20px 0 170px 51px;
+  margin: 20px 0 170px 31px;
 }
-.home__job-name--underline {
+.right-menu__job-name--underline {
   border-bottom: 2px solid #ffb300;
 }
-.home__section-header {
+.right-menu__info-heading {
   text-align: left;
 }
-.home__section-header--image {
+.right-menu__info-heading-image {
   margin: 0 20px 0 50px;
 }
-.home__section-divider {
+.right-menu__info-heading-underline {
   width: 100%;
   margin: -20px 0px 25px 45px;
+}
+.right-menu__info-heading-underline--color {
   border-color: #ffb300;
 }
-.home .content-box {
+.right-menu .content-box {
   display: flex;
+  flex-flow: row wrap;
+  text-align: left;
 }
-.home .content-box__date-icon-span {
-  margin: 30px 0 0 70px;
+.right-menu .content-box > span {
+  margin: 0 0 0 70px;
 }
-.home .content-box__date-icon-span--date-icon {
-  margin: 0 0 130px 0;
+.right-menu .content-box > span > .date-icon-1 {
+  margin: 30px 0 130px 0;
 }
-.home .content-box .left-info {
+.right-menu .content-box .left-info {
   float: left;
   text-align: left;
   margin: 20px 0 0 10px;
 }
-.home .content-box .left-info__date {
+.right-menu .content-box .left-info__date {
   display: inline-block;
   margin: 0px -300px 115px 20px;
-  text-align: left;
+  text-align-last: left;
 }
-.home .content-box .left-info__reference {
+.right-menu .content-box .left-info__reference {
   text-align: left;
   margin: 0 0 0 50px;
 }
-.home .content-box .right-info {
+.right-menu .content-box .right-info {
   float: right;
   text-align: left;
   padding: 30px 0 0 300px;
 }
-.home .content-box .right-info__place {
+.right-menu .content-box .right-info__place {
   text-align: left;
   margin: 0px 0px 10px 0px;
   display: inline-block;
@@ -117,19 +259,19 @@ footer {
   font-size: 17px;
   letter-spacing: 0.3px;
 }
-.home .content-box .right-info__role {
+.right-menu .content-box .right-info__role {
   text-align: left;
   font-size: 15px;
   margin-bottom: -0.1px;
   letter-spacing: -0.3px;
 }
-.home .content-box .right-info__description {
+.right-menu .content-box .right-info__description {
   text-align: left;
   font-size: 15px;
   min-width: 420px;
   max-width: 420px;
 }
-.home .content-box .right-info__reference {
+.right-menu .content-box .right-info__reference {
   text-align: left;
   margin: -10px 0 0 -150px;
 }
