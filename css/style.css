@@ -56,7 +56,7 @@ html, body {
   color: #4caf50;
 }
 .btn--portfolio-color :hover {
-  transfor: scale(1.1);
+  transform: scale(1.1);
 }
 .btn--portfolio-color :visited {
   color: #4caf50;
