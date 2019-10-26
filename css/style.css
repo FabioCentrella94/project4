@@ -50,16 +50,16 @@ html, body {
   color: #f06292;
 }
 .btn--portfolio-color {
-  color: #4caf50;
+  color: #69f0ae;
 }
 .btn--portfolio-color :link {
-  color: #4caf50;
+  color: #69f0ae;
 }
 .btn--portfolio-color :hover {
   transform: scale(1.1);
 }
 .btn--portfolio-color :visited {
-  color: #4caf50;
+  color: #69f0ae;
 }
 
 .container {
@@ -397,7 +397,7 @@ footer {
   }
 }
 .portfolio-header--background-color {
-  background-color: #4caf50;
+  background-color: #69f0ae;
 }
 
 .menu {
@@ -423,7 +423,7 @@ footer {
   margin: -20px 0 0 0;
 }
 .menu .heading__underline--color {
-  border-color: #4caf50;
+  border-color: #69f0ae;
 }
 .menu .project {
   display: flex;
@@ -468,7 +468,7 @@ footer {
   margin: 6% 0 0 0;
 }
 .menu__divider--color {
-  border-color: #4caf50;
+  border-color: #69f0ae;
 }
 
 /*# sourceMappingURL=style.css.map */
