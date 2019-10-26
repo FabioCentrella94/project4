@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: 1 0 75px;
+    @media only screen and (max-width: 1024px) {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &--background-color {
+        background-color: $portfolio-main-color;
+    }
+
+    > .nav {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        height: 100%;
+        position: fixed;
+
+            @media only screen and (max-width: 1024px) {
+                flex-flow: row;
+                position: static;
+        }
+    }
+}

@@ -2,63 +2,19 @@
 
 .btn {
     font-size: 60px;
-    background-color: $secondary-color;
     height: 12%;
     width: 110%;
     border: 3px solid black;
     border-radius: 10px;
-    @media only screen and (max-width: 1024px) {
-        font-size: 45px;
-        width: 19%;
+
+        &--background-color {
+            background-color: $secondary-color;
+        }
+             
+        @media only screen and (max-width: 1024px) {
+            font-size: 45px;
+            width: 19%;
     }
 
-    &--education-color {
-        color: $education-main-color !important;
 
-        :link {
-            color: $education-main-color;
-        }
-
-        :hover {
-            transform: scale(1.10)
-
-        }
-         
-        :visited {
-            color: $education-main-color !important;
-        }
-    }
-
-    &--experience-color {
-        color: $experience-main-color;
-
-        :link {
-            color: $experience-main-color;
-        }
-
-        :hover {
-            transform: scale(1.10);
-        }
-
-        :visited {
-            color: $experience-main-color;
-        }
-    }
-
-    &--portfolio-color {
-        color: $portfolio-main-color;
-
-        :link {
-            color: $portfolio-main-color;
-        }
-
-        :hover {
-            transform: scale(1.10)
-
-        }
-
-        :visited {
-            color: $portfolio-main-color;
-        }
-    }
 }

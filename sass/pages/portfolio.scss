@@ -1,22 +1,5 @@
 @import "../utils/variables";
 
-.portfolio-header {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    flex: 1 0 75px;
-    @media only screen and (max-width: 1024px) {
-        display: block;
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-    }
-
-    &--background-color {
-        background-color: $portfolio-main-color;
-    }
-}
-
 .menu { 
     flex: 7;
     padding: 0 5% 3% 5%;

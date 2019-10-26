@@ -13,53 +13,19 @@ html, body {
 
 .btn {
   font-size: 60px;
-  background-color: #263238;
   height: 12%;
   width: 110%;
   border: 3px solid black;
   border-radius: 10px;
+}
+.btn--background-color {
+  background-color: #263238;
 }
 @media only screen and (max-width: 1024px) {
   .btn {
     font-size: 45px;
     width: 19%;
   }
-}
-.btn--education-color {
-  color: #4fc3f7 !important;
-}
-.btn--education-color :link {
-  color: #4fc3f7;
-}
-.btn--education-color :hover {
-  transform: scale(1.1);
-}
-.btn--education-color :visited {
-  color: #4fc3f7 !important;
-}
-.btn--experience-color {
-  color: #f06292;
-}
-.btn--experience-color :link {
-  color: #f06292;
-}
-.btn--experience-color :hover {
-  transform: scale(1.1);
-}
-.btn--experience-color :visited {
-  color: #f06292;
-}
-.btn--portfolio-color {
-  color: #66bb6a;
-}
-.btn--portfolio-color :link {
-  color: #66bb6a;
-}
-.btn--portfolio-color :hover {
-  transform: scale(1.1);
-}
-.btn--portfolio-color :visited {
-  color: #66bb6a;
 }
 
 .container {
@@ -73,7 +39,24 @@ html, body {
   }
 }
 
-.nav {
+.header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex: 1 0 75px;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+}
+.header--background-color {
+  background-color: #66bb6a;
+}
+.header > .nav {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
@@ -81,7 +64,7 @@ html, body {
   position: fixed;
 }
 @media only screen and (max-width: 1024px) {
-  .nav {
+  .header > .nav {
     flex-flow: row;
     position: static;
   }
@@ -380,24 +363,6 @@ footer {
 }
 .experience-info__divider--color {
   border-color: #f06292;
-}
-
-.portfolio-header {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  flex: 1 0 75px;
-}
-@media only screen and (max-width: 1024px) {
-  .portfolio-header {
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
-}
-.portfolio-header--background-color {
-  background-color: #66bb6a;
 }
 
 .menu {
