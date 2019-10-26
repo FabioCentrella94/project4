@@ -3,15 +3,48 @@
 .btn {
     font-size: 60px;
     background-color: $secondary-color;
-    border: 2px solid black;
+    height: 12%;
+    width: 110%;
+    border: 3px solid black;
     border-radius: 10px;
-    color: $main-color;
-
-    :hover {
-        color: lawngreen;
+    @media only screen and (max-width: 1024px) {
+        font-size: 45px;
+        width: 19%;
     }
 
-    :visited {
-        color: $main-color;
+    &--education-color {
+        color: $education-main-color !important;
+
+        :hover {
+
+        }
+         
+        :visited {
+            color: $education-main-color !important;
+        }
+    }
+
+    &--experience-color {
+        color: $experience-main-color;
+
+        :hover {
+            transform: scale(1.10);
+        }
+
+        :visited {
+            color: $experience-main-color;
+        }
+    }
+
+    &--portfolio-color {
+        color: $portfolio-main-color;
+
+        :hover {
+
+        }
+
+        :visited {
+            color: $portfolio-main-color;
+        }
     }
 }

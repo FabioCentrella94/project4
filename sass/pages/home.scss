@@ -1,21 +1,9 @@
 @import "../utils/variables";
 
-.container {
-    display: flex;
-    flex-flow: row;
-    height: auto;
-    grid-template-rows: repeat(4, 25%);
-    grid-template-columns: 30% 65%;
-    @media only screen and (max-width: 1024px) {
-        flex-flow: column;
-    }
-}
-
 .left-menu {
     flex: 1;
     background-color: $main-color;
     padding-top: 60px;
-    grid-row: 1 / -1;
 
     &__profile-picture {
         border-radius: 10000px;
@@ -139,13 +127,6 @@
                 letter-spacing: -0.3px;
             }
 
-            &__description {
-                text-align: left;
-                font-size: 15px;
-                min-width: 420px;
-                max-width: 420px;
-            }
-
             &__reference {
                 text-align: left;
                 margin: -10px 0 0 -150px;
@@ -153,8 +134,3 @@
         }
     } 
 }
-  
-
-
-
-

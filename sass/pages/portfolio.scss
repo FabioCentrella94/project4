@@ -1,0 +1,92 @@
+@import "../utils/variables";
+
+.portfolio-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: 1 0 75px;
+    @media only screen and (max-width: 1024px) {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &--background-color {
+        background-color: $portfolio-main-color;
+    }
+}
+
+.menu { 
+    flex: 7;
+    padding: 0 5% 3% 5%;
+    @media only screen and (max-width: 480px) {
+        z-index: 0;
+        padding-top: 25% !important;
+    }
+    @media only screen and (max-width: 1024px) {
+        z-index: 0;
+        padding-top: 15%;
+    }
+
+    .heading {
+
+        &__title {
+        text-align: left;
+        }
+
+        &__underline {
+            margin: -20px 0 0 0;
+       
+            &--color {
+                border-color: $portfolio-main-color;
+            }
+        }
+    }    
+
+    .project {
+       display: flex;
+       flex-flow: row-reverse;
+       margin: 5% 0 0 0;
+       @media only screen and (max-width: 1024px) {
+       flex-flow: column;
+       }
+
+        &__description {
+            @media only screen and (max-width: 1024px) {
+                margin: 1% 0 0 0;
+            }
+
+            > * {
+                text-align: justify;
+                min-width: 600px;
+                @media only screen and (max-width: 1024px) {
+                    min-width: auto;
+                }
+            }
+        }
+
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            min-width: 300px;
+       
+            > img {
+                height: 95%;
+                width: 90%;
+                @media only screen and (max-width: 1024px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__divider {
+        margin: 6% 0 0 0;
+
+        &--color {
+            border-color: $portfolio-main-color;
+        }
+    }
+}

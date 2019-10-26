@@ -1,15 +1,6 @@
 @import "../utils/variables";
 
-.education-container {
-    display: flex;
-    flex-flow: row;
-    height: auto;
-    @media only screen and (max-width: 1024px) {
-        flex-flow: column;
-    }
-}
-
-.header {
+.education-header {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -22,11 +13,11 @@
     }
 
     &--background-color {
-        background-color: $main-color;
+        background-color: $education-main-color;
     }
 }
 
-.info { 
+.education-info { 
     flex: 7;
     padding: 0 5% 3% 5%;
     @media only screen and (max-width: 480px) {
@@ -48,7 +39,7 @@
             margin: -20px 0 0 0;
        
             &--color {
-                border-color: $main-color;
+                border-color: $education-main-color;
             }
         }
     }    
@@ -91,11 +82,11 @@
         }
     }
 
-    &__education-divider {
+    &__divider {
         margin: 6% 0 0 0;
 
         &--color {
-            border-color: $main-color;
+            border-color: $education-main-color;
         }
     }
 }
