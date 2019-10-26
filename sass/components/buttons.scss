@@ -15,6 +15,10 @@
     &--education-color {
         color: $education-main-color !important;
 
+        :link {
+            color: $education-main-color;
+        }
+
         :hover {
 
         }
@@ -27,6 +31,10 @@
     &--experience-color {
         color: $experience-main-color;
 
+        :link {
+            color: $experience-main-color;
+        }
+
         :hover {
             transform: scale(1.10);
         }
@@ -38,6 +46,10 @@
 
     &--portfolio-color {
         color: $portfolio-main-color;
+
+        :link {
+            color: $portfolio-main-color;
+        }
 
         :hover {
 

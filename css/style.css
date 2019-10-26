@@ -28,10 +28,16 @@ html, body {
 .btn--education-color {
   color: #4fc3f7 !important;
 }
+.btn--education-color :link {
+  color: #4fc3f7;
+}
 .btn--education-color :visited {
   color: #4fc3f7 !important;
 }
 .btn--experience-color {
+  color: #f06292;
+}
+.btn--experience-color :link {
   color: #f06292;
 }
 .btn--experience-color :hover {
@@ -41,6 +47,9 @@ html, body {
   color: #f06292;
 }
 .btn--portfolio-color {
+  color: #4caf50;
+}
+.btn--portfolio-color :link {
   color: #4caf50;
 }
 .btn--portfolio-color :visited {
