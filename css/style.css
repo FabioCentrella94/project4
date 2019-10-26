@@ -31,6 +31,9 @@ html, body {
 .btn--education-color :link {
   color: #4fc3f7;
 }
+.btn--education-color :hover {
+  transform: scale(1.1);
+}
 .btn--education-color :visited {
   color: #4fc3f7 !important;
 }
@@ -51,6 +54,9 @@ html, body {
 }
 .btn--portfolio-color :link {
   color: #4caf50;
+}
+.btn--portfolio-color :hover {
+  transfor: scale(1.1);
 }
 .btn--portfolio-color :visited {
   color: #4caf50;
