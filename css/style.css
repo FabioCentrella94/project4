@@ -28,6 +28,9 @@ html, body {
     width: 19%;
   }
 }
+.btn :hover {
+  transform: scale(1.1);
+}
 .btn :visited {
   color: #ffb300;
 }
@@ -157,6 +160,28 @@ footer {
   background-color: #ffb300;
   padding-top: 60px;
 }
+.left-menu__nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: -60px 0 20% 0;
+  background-color: #263238;
+}
+@media only screen and (max-width: 1024px) {
+  .left-menu__nav {
+    position: fixed;
+    width: 100%;
+  }
+}
+.left-menu__nav__btn {
+  font-size: 50px;
+}
+.left-menu__nav__btn--color {
+  color: #ffb300;
+}
+.left-menu__nav__btn :hover {
+  transform: scale(1.1);
+}
 .left-menu__profile-picture {
   border-radius: 10000px;
 }
@@ -193,6 +218,12 @@ footer {
 .right-menu__heading--name-color {
   color: #ffb300;
 }
+@media only screen and (max-width: 1024px) {
+  .right-menu__heading {
+    min-width: 300px;
+    margin: 120px -1% -20px 2%;
+  }
+}
 .right-menu__job-name {
   font-size: 19px;
   text-align: left;
@@ -200,6 +231,12 @@ footer {
 }
 .right-menu__job-name--underline {
   border-bottom: 2px solid #ffb300;
+}
+@media only screen and (max-width: 1024px) {
+  .right-menu__job-name {
+    min-width: 300px;
+    margin-left: 2%;
+  }
 }
 .right-menu__info-heading {
   text-align: left;
@@ -214,37 +251,65 @@ footer {
 .right-menu__info-heading-underline--color {
   border-color: #ffb300;
 }
-.right-menu .content-box {
+@media only screen and (max-width: 1024px) {
+  .right-menu__info-heading-underline {
+    width: 70vw;
+  }
+}
+.right-menu > .content-box {
   display: flex;
   flex-flow: row wrap;
   text-align: left;
 }
-.right-menu .content-box > span {
+.right-menu > .content-box > span {
   margin: 0 0 0 70px;
 }
-.right-menu .content-box > span > .date-icon-1 {
+@media only screen and (max-width: 1024px) {
+  .right-menu > .content-box > span {
+    margin-left: 0;
+    padding-left: 6%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .right-menu > .content-box > span {
+    margin-left: 0;
+    padding-left: 10%;
+  }
+}
+.right-menu > .content-box > span > .date-icon-1 {
   margin: 30px 0 130px 0;
 }
-.right-menu .content-box .left-info {
+.right-menu > .content-box .left-info {
   float: left;
   text-align: left;
   margin: 20px 0 0 10px;
 }
-.right-menu .content-box .left-info__date {
+.right-menu > .content-box .left-info__date {
   display: inline-block;
   margin: 0px -300px 115px 20px;
   text-align-last: left;
 }
-.right-menu .content-box .left-info__reference {
+@media only screen and (max-width: 1024px) {
+  .right-menu > .content-box .left-info__date {
+    margin-left: -1%;
+  }
+}
+.right-menu > .content-box .left-info__reference {
   text-align: left;
   margin: 0 0 0 50px;
 }
-.right-menu .content-box .right-info {
+.right-menu > .content-box .right-info {
   float: right;
   text-align: left;
   padding: 30px 0 0 300px;
 }
-.right-menu .content-box .right-info__place {
+@media only screen and (max-width: 1024px) {
+  .right-menu > .content-box .right-info {
+    margin: 40px 0px 0px -100%;
+    padding-left: 100%;
+  }
+}
+.right-menu > .content-box .right-info__place {
   text-align: left;
   margin: 0px 0px 10px 0px;
   display: inline-block;
@@ -252,15 +317,27 @@ footer {
   font-size: 17px;
   letter-spacing: 0.3px;
 }
-.right-menu .content-box .right-info__role {
+@media only screen and (max-width: 1024px) {
+  .right-menu > .content-box .right-info__place {
+    margin-top: 5%;
+  }
+}
+.right-menu > .content-box .right-info__place__2 {
+  margin-top: 110px;
+}
+.right-menu > .content-box .right-info__role {
   text-align: left;
   font-size: 15px;
-  margin-bottom: -0.1px;
   letter-spacing: -0.3px;
 }
-.right-menu .content-box .right-info__reference {
+.right-menu > .content-box .right-info__reference {
   text-align: left;
   margin: -10px 0 0 -150px;
+}
+@media only screen and (max-width: 1024px) {
+  .right-menu > .content-box .right-info__reference {
+    margin: 140px 0px 0px -153px;
+  }
 }
 
 .experience {
