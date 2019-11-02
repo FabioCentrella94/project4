@@ -1,18 +1,405 @@
-/* Error: Undefined variable.
- *    ,
- * 25 |                 border-color: $portfolio-main-color;
- *    |                               ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\pages\portfolio.scss 25:31  @import
- *   sass\main.scss 15:9              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 25 \2502                  border-color: $portfolio-main-color;\d\a    \2502                                ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\pages\\portfolio.scss 25:31  @import\a   sass\\main.scss 15:9              root stylesheet";
+html, body {
+  width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  overflow-x: hidden;
 }
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.btn {
+  font-size: 60px;
+  height: 12%;
+  width: 110%;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.btn--color {
+  color: #ffb300;
+  background-color: #263238;
+}
+@media only screen and (max-width: 1024px) {
+  .btn {
+    font-size: 45px;
+    width: 19%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  height: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-flow: column;
+  }
+}
+
+.header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  flex: 1 0 75px;
+}
+.header--color {
+  background-color: #ffb300;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+}
+.header > .nav {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 100%;
+  position: fixed;
+}
+@media only screen and (max-width: 1024px) {
+  .header > .nav {
+    flex-flow: row;
+    position: static;
+    padding: 3% 0;
+  }
+}
+
+footer {
+  font-size: 11px;
+  padding: 5px;
+  border-top: 2px solid black;
+}
+
+.education {
+  flex: 7;
+  padding: 0 5% 3% 5%;
+}
+@media only screen and (max-width: 480px) {
+  .education {
+    z-index: 0;
+    padding-top: 25% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .education {
+    z-index: 0;
+    padding-top: 15%;
+  }
+}
+.education__heading__title {
+  text-align: left;
+}
+.education__heading__underline {
+  margin: -20px 0 0 0;
+}
+.education__heading__underline--color {
+  border-color: #ffb300;
+}
+.education__info {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 5% 0 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .education__info {
+    flex-flow: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .education__info__description {
+    margin: 1% 0 0 0;
+  }
+}
+.education__info__description > * {
+  text-align: justify;
+  min-width: 600px;
+}
+@media only screen and (max-width: 1024px) {
+  .education__info__description > * {
+    min-width: auto;
+  }
+}
+.education__info__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 300px;
+}
+.education__info__image > img {
+  height: auto;
+  width: 90%;
+}
+@media only screen and (max-width: 1024px) {
+  .education__info__image > img {
+    width: 100%;
+  }
+}
+.education__divider {
+  margin: 6% 0 0 0;
+}
+.education__divider--color {
+  border-color: #ffb300;
+}
+
+.left-menu {
+  flex: 1;
+  background-color: #ffb300;
+  padding-top: 60px;
+}
+.left-menu__profile-picture {
+  border-radius: 10000px;
+}
+.left-menu__info-heading {
+  background-color: #263238;
+  color: #ffb300;
+  padding: 5px 0px;
+  margin-top: 60px;
+}
+.left-menu__contact {
+  text-align: justify;
+  padding: 10px 50px;
+  margin-bottom: -15px;
+}
+.left-menu__about {
+  text-align: justify;
+  padding: 10px 50px;
+  margin-bottom: 300px;
+}
+.left-menu__hobby-image {
+  font-size: 50px;
+  margin: 30px 30px;
+}
+
+.right-menu {
+  flex: 2;
+  padding-bottom: 40px;
+  width: 95%;
+}
+.right-menu__heading {
+  text-align: left;
+  margin: 120px 0px -20px 30px;
+}
+.right-menu__heading--name-color {
+  color: #ffb300;
+}
+.right-menu__job-name {
+  font-size: 19px;
+  text-align: left;
+  margin: 20px 0 170px 31px;
+}
+.right-menu__job-name--underline {
+  border-bottom: 2px solid #ffb300;
+}
+.right-menu__info-heading {
+  text-align: left;
+}
+.right-menu__info-heading-image {
+  margin: 0 20px 0 50px;
+}
+.right-menu__info-heading-underline {
+  width: 100%;
+  margin: -20px 0px 25px 45px;
+}
+.right-menu__info-heading-underline--color {
+  border-color: #ffb300;
+}
+.right-menu .content-box {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+}
+.right-menu .content-box > span {
+  margin: 0 0 0 70px;
+}
+.right-menu .content-box > span > .date-icon-1 {
+  margin: 30px 0 130px 0;
+}
+.right-menu .content-box .left-info {
+  float: left;
+  text-align: left;
+  margin: 20px 0 0 10px;
+}
+.right-menu .content-box .left-info__date {
+  display: inline-block;
+  margin: 0px -300px 115px 20px;
+  text-align-last: left;
+}
+.right-menu .content-box .left-info__reference {
+  text-align: left;
+  margin: 0 0 0 50px;
+}
+.right-menu .content-box .right-info {
+  float: right;
+  text-align: left;
+  padding: 30px 0 0 300px;
+}
+.right-menu .content-box .right-info__place {
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+.right-menu .content-box .right-info__role {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: -0.1px;
+  letter-spacing: -0.3px;
+}
+.right-menu .content-box .right-info__reference {
+  text-align: left;
+  margin: -10px 0 0 -150px;
+}
+
+.experience {
+  flex: 7;
+  padding: 0 5% 3% 5%;
+}
+@media only screen and (max-width: 480px) {
+  .experience {
+    z-index: 0;
+    padding-top: 25% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .experience {
+    z-index: 0;
+    padding-top: 15%;
+  }
+}
+.experience__heading__title {
+  text-align: left;
+}
+.experience__heading__underline {
+  margin: -20px 0 0 0;
+}
+.experience__heading__underline--color {
+  border-color: #ffb300;
+}
+.experience__info {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 5% 0 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .experience__info {
+    flex-flow: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .experience__info__description {
+    margin: 1% 0 0 0;
+  }
+}
+.experience__info__description > * {
+  text-align: justify;
+  min-width: 600px;
+}
+@media only screen and (max-width: 1024px) {
+  .experience__info__description > * {
+    min-width: auto;
+  }
+}
+.experience__info__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 300px;
+}
+.experience__info__image > img {
+  height: auto;
+  width: 90%;
+}
+@media only screen and (max-width: 1024px) {
+  .experience__info__image > img {
+    width: 100%;
+  }
+}
+.experience__divider {
+  margin: 6% 0 0 0;
+}
+.experience__divider--color {
+  border-color: #ffb300;
+}
+
+.menu {
+  flex: 7;
+  padding: 0 5% 3% 5%;
+}
+@media only screen and (max-width: 480px) {
+  .menu {
+    z-index: 0;
+    padding-top: 25% !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .menu {
+    z-index: 0;
+    padding-top: 15%;
+  }
+}
+.menu .heading__title {
+  text-align: left;
+}
+.menu .heading__underline {
+  margin: -20px 0 0 0;
+}
+.menu .heading__underline--color {
+  border-color: #ffb300;
+}
+.menu .project {
+  display: flex;
+  flex-flow: row-reverse;
+  margin: 5% 0 0 0;
+}
+@media only screen and (max-width: 1024px) {
+  .menu .project {
+    flex-flow: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .menu .project__description {
+    margin: 1% 0 0 0;
+  }
+}
+.menu .project__description > * {
+  text-align: justify;
+  min-width: 600px;
+}
+@media only screen and (max-width: 1024px) {
+  .menu .project__description > * {
+    min-width: auto;
+  }
+}
+.menu .project__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-width: 300px;
+}
+.menu .project__image > img {
+  height: 95%;
+  width: 90%;
+}
+@media only screen and (max-width: 1024px) {
+  .menu .project__image > img {
+    width: 100%;
+  }
+}
+.menu__divider {
+  margin: 6% 0 0 0;
+}
+.menu__divider--color {
+  border-color: #ffb300;
+}
+
+/*# sourceMappingURL=style.css.map */
