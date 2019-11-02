@@ -1,18 +1,20 @@
 @import "../utils/variables";
 
-.menu { 
+.portfolio {
     flex: 7;
     padding: 0 5% 3% 5%;
+    
     @media only screen and (max-width: 480px) {
         z-index: 0;
         padding-top: 25% !important;
     }
+
     @media only screen and (max-width: 1024px) {
         z-index: 0;
         padding-top: 15%;
     }
-
-    .heading {
+    
+    &__heading {
 
         &__title {
         text-align: left;
@@ -27,15 +29,17 @@
         }
     }    
 
-    .project {
-       display: flex;
-       flex-flow: row-reverse;
-       margin: 5% 0 0 0;
-       @media only screen and (max-width: 1024px) {
-       flex-flow: column;
-       }
-
+    &__info {
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 5% 0 0 0;
+       
+        @media only screen and (max-width: 1024px) {
+            flex-flow: column;
+        }
+    
         &__description {
+
             @media only screen and (max-width: 1024px) {
                 margin: 1% 0 0 0;
             }
@@ -43,21 +47,23 @@
             > * {
                 text-align: justify;
                 min-width: 600px;
+
                 @media only screen and (max-width: 1024px) {
                     min-width: auto;
                 }
             }
-        }
+        }                    
 
         &__image {
-            display: flex;
+            display: flex;   
             justify-content: center;
             align-items: flex-end;
             min-width: 300px;
        
             > img {
-                height: 95%;
+                height: auto;
                 width: 90%;
+                
                 @media only screen and (max-width: 1024px) {
                     width: 100%;
                 }

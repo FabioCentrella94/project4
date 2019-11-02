@@ -331,74 +331,74 @@ footer {
   border-color: #ffb300;
 }
 
-.menu {
+.portfolio {
   flex: 7;
   padding: 0 5% 3% 5%;
 }
 @media only screen and (max-width: 480px) {
-  .menu {
+  .portfolio {
     z-index: 0;
     padding-top: 25% !important;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .menu {
+  .portfolio {
     z-index: 0;
     padding-top: 15%;
   }
 }
-.menu .heading__title {
+.portfolio__heading__title {
   text-align: left;
 }
-.menu .heading__underline {
+.portfolio__heading__underline {
   margin: -20px 0 0 0;
 }
-.menu .heading__underline--color {
+.portfolio__heading__underline--color {
   border-color: #ffb300;
 }
-.menu .project {
+.portfolio__info {
   display: flex;
   flex-flow: row-reverse;
   margin: 5% 0 0 0;
 }
 @media only screen and (max-width: 1024px) {
-  .menu .project {
+  .portfolio__info {
     flex-flow: column;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .menu .project__description {
+  .portfolio__info__description {
     margin: 1% 0 0 0;
   }
 }
-.menu .project__description > * {
+.portfolio__info__description > * {
   text-align: justify;
   min-width: 600px;
 }
 @media only screen and (max-width: 1024px) {
-  .menu .project__description > * {
+  .portfolio__info__description > * {
     min-width: auto;
   }
 }
-.menu .project__image {
+.portfolio__info__image {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   min-width: 300px;
 }
-.menu .project__image > img {
-  height: 95%;
+.portfolio__info__image > img {
+  height: auto;
   width: 90%;
 }
 @media only screen and (max-width: 1024px) {
-  .menu .project__image > img {
+  .portfolio__info__image > img {
     width: 100%;
   }
 }
-.menu__divider {
+.portfolio__divider {
   margin: 6% 0 0 0;
 }
-.menu__divider--color {
+.portfolio__divider--color {
   border-color: #ffb300;
 }
 
