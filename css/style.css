@@ -28,6 +28,9 @@ html, body {
     width: 19%;
   }
 }
+.btn :hover {
+  transform: scale(1.1);
+}
 .btn :visited {
   color: #ffb300;
 }
