@@ -389,7 +389,7 @@ footer {
   margin: -20px 0 0 0;
 }
 .menu .heading__underline--color {
-  border-color: #66bb6a;
+  border-color: #ffb300;
 }
 .menu .project {
   display: flex;
@@ -434,7 +434,7 @@ footer {
   margin: 6% 0 0 0;
 }
 .menu__divider--color {
-  border-color: #66bb6a;
+  border-color: #ffb300;
 }
 
 /*# sourceMappingURL=style.css.map */
