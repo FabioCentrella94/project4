@@ -28,6 +28,9 @@ html, body {
     width: 19%;
   }
 }
+.btn :visited {
+  color: #ffb300;
+}
 
 .container {
   display: flex;
