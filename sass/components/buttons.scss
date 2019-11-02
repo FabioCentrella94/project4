@@ -17,6 +17,10 @@
             width: 19%;
     }
 
+    :hover {
+        transform: scale(1.10)
+    }
+
     :visited {
         color: $main-color;
     }
