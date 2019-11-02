@@ -3,16 +3,17 @@
     flex-flow: column;
     align-items: center;
     flex: 1 0 75px;
+
+    &--color {
+        background-color: $main-color;
+    }   
+    
     @media only screen and (max-width: 1024px) {
         display: block;
         position: fixed;
         width: 100%;
         z-index: 1;
-    }
-
-    &--background-color {
-        background-color: $main-color;
-    }
+    }        
 
     > .nav {
         display: flex;
@@ -21,9 +22,10 @@
         height: 100%;
         position: fixed;
 
-            @media only screen and (max-width: 1024px) {
-                flex-flow: row;
-                position: static;
+        @media only screen and (max-width: 1024px) {
+            flex-flow: row;
+            position: static;
+            padding: 3% 0;
         }
     }
 }
