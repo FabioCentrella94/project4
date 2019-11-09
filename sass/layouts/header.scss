@@ -18,8 +18,8 @@
     > .nav {
         display: flex;
         flex-flow: column;
-        justify-content: space-around;
-        height: 100%;
+        justify-content: space-evenly;
+        height: 90%;
         position: fixed;
 
         @media only screen and (max-width: 1024px) {
