@@ -14,7 +14,7 @@ html, body {
 .btn {
   font-size: 60px;
   height: 12%;
-  width: 110%;
+  width: auto;
   border: 3px solid black;
   border-radius: 10px;
 }
@@ -50,7 +50,7 @@ html, body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  flex: 1 0 75px;
+  flex: 1 0 85px;
 }
 .header--color {
   background-color: #ffb300;
@@ -88,10 +88,20 @@ footer > div {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+@media only screen and (max-width: 1024px) {
+  footer > div {
+    display: block;
+  }
+}
 footer > div > * {
   border: 2px solid #ffb300;
   font-size: 16px;
   padding: 0 1%;
+}
+@media only screen and (max-width: 1024px) {
+  footer > div > * {
+    margin: 0 0 1% 0;
+  }
 }
 
 .education {
