@@ -16,10 +16,7 @@ footer {
             border: 2px solid $main-color;
             font-size: 16px;
             padding: 0 1%;
-
-            @media only screen and (max-width: 1024px) {
-                margin: 0 0 1% 0;
-            }
+            margin: 1% 0;
         }
     }
 }

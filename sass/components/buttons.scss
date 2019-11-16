@@ -2,26 +2,49 @@
 
 .btn {
     font-size: 60px;
-    height: 12%;
+    height: 15%;
     width: auto;
     border: 3px solid black;
     border-radius: 10px;
 
         &--color {
-            color: $main-color;
             background-color: $secondary-color;
         }
-             
+
+        :link {
+            color: $main-color;
+        }
+
+        :hover {
+            transform: scale(1.10);
+        }
+
+        :active {
+            color: $main-color;
+        }
+
+        :visited {
+            color: $main-color;
+        }
+
+        &--selected {
+
+            :link {
+                color: $selected-btn-color; 
+            }
+
+            :active {
+                color: $selected-btn-color;
+            }
+
+            :visited {
+                color: $selected-btn-color;
+            }
+        }
+
         @media only screen and (max-width: 1024px) {
+            margin: 0 1%;
             font-size: 45px;
             width: 19%;
-    }
-
-    :hover {
-        transform: scale(1.10);
-    }
-
-    :visited {
-        color: $main-color;
     }
 }

@@ -13,26 +13,41 @@ html, body {
 
 .btn {
   font-size: 60px;
-  height: 12%;
+  height: 15%;
   width: auto;
   border: 3px solid black;
   border-radius: 10px;
 }
 .btn--color {
-  color: #ffb300;
   background-color: #263238;
 }
-@media only screen and (max-width: 1024px) {
-  .btn {
-    font-size: 45px;
-    width: 19%;
-  }
+.btn :link {
+  color: #ffb300;
 }
 .btn :hover {
   transform: scale(1.1);
 }
+.btn :active {
+  color: #ffb300;
+}
 .btn :visited {
   color: #ffb300;
+}
+.btn--selected :link {
+  color: #00bcd4;
+}
+.btn--selected :active {
+  color: #00bcd4;
+}
+.btn--selected :visited {
+  color: #00bcd4;
+}
+@media only screen and (max-width: 1024px) {
+  .btn {
+    margin: 0 1%;
+    font-size: 45px;
+    width: 19%;
+  }
 }
 
 .container {
@@ -50,7 +65,8 @@ html, body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  flex: 1 0 85px;
+  flex: 1 0 125px;
+  padding: 1% 0 0 0;
 }
 .header--color {
   background-color: #ffb300;
@@ -66,15 +82,17 @@ html, body {
 .header > .nav {
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
-  height: 90%;
+  justify-content: space-around;
   position: fixed;
+  height: 78%;
+  width: 8%;
 }
 @media only screen and (max-width: 1024px) {
   .header > .nav {
     flex-flow: row;
     position: static;
     padding: 3% 0;
+    width: auto;
   }
 }
 
@@ -97,16 +115,12 @@ footer > div > * {
   border: 2px solid #ffb300;
   font-size: 16px;
   padding: 0 1%;
-}
-@media only screen and (max-width: 1024px) {
-  footer > div > * {
-    margin: 0 0 1% 0;
-  }
+  margin: 1% 0;
 }
 
 .education {
   flex: 7;
-  padding: 0 5% 3% 5%;
+  padding: 3% 5% 5% 5%;
 }
 @media only screen and (max-width: 480px) {
   .education {
@@ -136,17 +150,20 @@ footer > div > * {
 }
 @media only screen and (max-width: 1024px) {
   .education__info {
-    flex-flow: column;
+    display: block;
   }
+}
+.education__info__description {
+  margin: -2.5% 0 0 0;
 }
 @media only screen and (max-width: 1024px) {
   .education__info__description {
-    margin: 1% 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 .education__info__description > * {
   text-align: justify;
-  min-width: 600px;
+  min-width: 450px;
 }
 @media only screen and (max-width: 1024px) {
   .education__info__description > * {
@@ -156,12 +173,17 @@ footer > div > * {
 .education__info__image {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  min-width: 300px;
+  min-width: 400px;
+}
+@media only screen and (max-width: 1024px) {
+  .education__info__image {
+    min-width: auto;
+  }
 }
 .education__info__image > img {
-  height: auto;
   width: 90%;
+  transform-origin: left;
+  animation: slide 1000ms 500ms backwards;
 }
 @media only screen and (max-width: 1024px) {
   .education__info__image > img {
@@ -175,6 +197,14 @@ footer > div > * {
   border-color: #ffb300;
 }
 
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .left-menu {
   flex: 1;
   background-color: #ffb300;
@@ -196,31 +226,46 @@ footer > div > * {
 }
 .left-menu__nav__btn {
   font-size: 50px;
+  margin: 0 1%;
 }
-.left-menu__nav__btn--color {
+.left-menu__nav__btn :link {
   color: #ffb300;
 }
 .left-menu__nav__btn :hover {
   transform: scale(1.1);
 }
+.left-menu__nav__btn :active {
+  color: #ffb300;
+}
+.left-menu__nav__btn :visited {
+  color: #ffb300;
+}
+.left-menu__nav__btn--selected :link {
+  color: #00bcd4;
+}
+.left-menu__nav__btn--selected :active {
+  color: #00bcd4;
+}
+.left-menu__nav__btn--selected :visited {
+  color: #00bcd4;
+}
 .left-menu__profile-picture {
   border-radius: 50000px;
+  animation: opacity 3s;
 }
 .left-menu__info-heading {
   background-color: #263238;
   color: #ffb300;
   padding: 5px 0px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 .left-menu__contact {
   text-align: justify;
   padding: 10px 50px;
-  margin-bottom: -15px;
 }
 .left-menu__about {
   text-align: justify;
   padding: 10px 50px;
-  margin-bottom: 300px;
 }
 .left-menu__hobby-image {
   font-size: 50px;
@@ -234,7 +279,7 @@ footer > div > * {
 }
 .right-menu__heading {
   text-align: left;
-  margin: 120px 0px -20px 20px;
+  margin: 100px 0px -25px 25px;
 }
 .right-menu__heading--name-color {
   color: #ffb300;
@@ -253,7 +298,7 @@ footer > div > * {
 .right-menu__job-name {
   font-size: 19px;
   text-align: left;
-  margin: 20px 0 170px 21px;
+  margin: 20px 0 100px 26px;
 }
 .right-menu__job-name--underline {
   border-bottom: 2px solid #ffb300;
@@ -286,13 +331,18 @@ footer > div > * {
   display: flex;
   flex-flow: row;
   text-align: left;
-  margin: 0 0 0 10px;
+  margin: 0 0 -55px 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .right-menu > .content-box {
+    margin-bottom: 10px;
+  }
 }
 .right-menu > .content-box > span {
   margin: 0 0 0 7%;
 }
 .right-menu > .content-box > span > .date-icon-1 {
-  margin: 30px 0 130px 0;
+  margin: 30px 0 135px 0;
 }
 .right-menu > .content-box .left-info {
   float: left;
@@ -301,17 +351,18 @@ footer > div > * {
 }
 .right-menu > .content-box .left-info__date {
   display: inline-block;
-  margin: 0px -300px 115px 20px;
+  margin: 0 -300px 115px 20px;
   text-align-last: left;
 }
 @media only screen and (max-width: 1024px) {
   .right-menu > .content-box .left-info__date {
-    margin-left: -1%;
+    margin: 0 -300px 115px -1%;
   }
 }
 .right-menu > .content-box .left-info__reference {
   text-align: left;
   margin: 0 0 0 50px;
+  min-width: 170px;
 }
 @media only screen and (max-width: 480px) {
   .right-menu > .content-box .left-info__reference {
@@ -321,42 +372,46 @@ footer > div > * {
 .right-menu > .content-box .right-info {
   float: right;
   text-align: left;
-  padding: 30px 0 0 300px;
+  padding: 30px 0 0 40%;
+  width: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .right-menu > .content-box .right-info {
-    margin: 40px 0px 0px -100%;
-    padding-left: 100%;
+    margin: 40px 0 0 -40%;
+    float: none;
   }
 }
 .right-menu > .content-box .right-info__place {
   text-align: left;
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
   display: inline-block;
   font-weight: bold;
   font-size: 17px;
   letter-spacing: 0.3px;
+  min-width: 300px;
 }
 @media only screen and (max-width: 1024px) {
   .right-menu > .content-box .right-info__place {
-    margin-top: 5%;
+    margin-top: -10px;
   }
 }
 .right-menu > .content-box .right-info__place__2 {
-  margin-top: 110px;
+  margin-top: 105px;
 }
 .right-menu > .content-box .right-info__role {
   text-align: left;
   font-size: 15px;
   letter-spacing: -0.3px;
+  min-width: 300px;
 }
 .right-menu > .content-box .right-info__reference {
   text-align: left;
   margin: -10px 0 0 -150px;
+  min-width: 150px;
 }
 @media only screen and (max-width: 480px) {
   .right-menu > .content-box .right-info__reference {
-    margin: 140px 0px 0px -153px !important;
+    margin: 140px 0px 0 -172px !important;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -365,9 +420,17 @@ footer > div > * {
   }
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .experience {
   flex: 7;
-  padding: 0 5% 3% 5%;
+  padding: 3% 5% 5% 5%;
 }
 @media only screen and (max-width: 480px) {
   .experience {
@@ -400,14 +463,17 @@ footer > div > * {
     flex-flow: column;
   }
 }
+.experience__info__description {
+  margin: -2.5% 0 0 0;
+}
 @media only screen and (max-width: 1024px) {
   .experience__info__description {
-    margin: 1% 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 .experience__info__description > * {
   text-align: justify;
-  min-width: 600px;
+  min-width: 450px;
 }
 @media only screen and (max-width: 1024px) {
   .experience__info__description > * {
@@ -417,12 +483,12 @@ footer > div > * {
 .experience__info__image {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  min-width: 300px;
+  min-width: 400px;
 }
 .experience__info__image > img {
-  height: auto;
   width: 90%;
+  transform-origin: left;
+  animation: slide 1000ms 500ms backwards;
 }
 @media only screen and (max-width: 1024px) {
   .experience__info__image > img {
@@ -436,9 +502,17 @@ footer > div > * {
   border-color: #ffb300;
 }
 
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .portfolio {
   flex: 7;
-  padding: 0 5% 3% 5%;
+  padding: 3% 5% 5% 5%;
 }
 @media only screen and (max-width: 480px) {
   .portfolio {
@@ -471,14 +545,17 @@ footer > div > * {
     flex-flow: column;
   }
 }
+.portfolio__info__description {
+  margin: -2.5% 0 0 0;
+}
 @media only screen and (max-width: 1024px) {
   .portfolio__info__description {
-    margin: 1% 0 0 0;
+    margin: 0 0 0 0;
   }
 }
 .portfolio__info__description > * {
   text-align: justify;
-  min-width: 600px;
+  min-width: 450px;
 }
 @media only screen and (max-width: 1024px) {
   .portfolio__info__description > * {
@@ -488,12 +565,12 @@ footer > div > * {
 .portfolio__info__image {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  min-width: 300px;
+  min-width: 400px;
 }
 .portfolio__info__image > img {
-  height: auto;
   width: 90%;
+  transform-origin: left;
+  animation: slide 1000ms 500ms backwards;
 }
 @media only screen and (max-width: 1024px) {
   .portfolio__info__image > img {
@@ -505,6 +582,15 @@ footer > div > * {
 }
 .portfolio__divider--color {
   border-color: #ffb300;
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

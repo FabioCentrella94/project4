@@ -2,7 +2,7 @@
 
 .experience {
     flex: 7;
-    padding: 0 5% 3% 5%;
+    padding: 3% 5% 5% 5%;
     
     @media only screen and (max-width: 480px) {
         z-index: 0;
@@ -39,14 +39,15 @@
         }
     
         &__description {
+            margin: -2.5% 0 0 0;
 
             @media only screen and (max-width: 1024px) {
-                margin: 1% 0 0 0;
+                margin: 0 0 0 0;
             }
 
             > * {
                 text-align: justify;
-                min-width: 600px;
+                min-width: 450px;
 
                 @media only screen and (max-width: 1024px) {
                     min-width: auto;
@@ -57,12 +58,12 @@
         &__image {
             display: flex;   
             justify-content: center;
-            align-items: flex-end;
-            min-width: 300px;
+            min-width: 400px;
        
             > img {
-                height: auto;
                 width: 90%;
+                transform-origin: left;
+                animation: slide 1000ms 500ms backwards;
                 
                 @media only screen and (max-width: 1024px) {
                     width: 100%;
@@ -77,5 +78,15 @@
         &--color {
             border-color: $main-color;
         }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }
