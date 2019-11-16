@@ -20,38 +20,61 @@
 
         &__btn {
             font-size: 50px;
+            margin: 0 1%;
 
-            &--color {
-                color: $main-color
+            :link {
+                color: $main-color;
             }
 
             :hover {
                 transform: scale(1.10)
+            }
+
+            :active {
+                color: $main-color
+            }
+
+            :visited {
+                color: $main-color;
+            }
+
+            &--selected {
+
+                :link {
+                    color: $selected-btn-color;
+                }
+    
+                :active {
+                    color: $selected-btn-color;
+                }
+    
+                :visited {
+                    color: $selected-btn-color;
+                }
             }
         }
     }
 
     &__profile-picture {
         border-radius: 50000px;
+        animation: opacity 3s;
     }
 
     &__info-heading {
         background-color: $secondary-color;
         color: $main-color;
         padding: 5px 0px;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     &__contact {
         text-align: justify;
         padding: 10px 50px;
-        margin-bottom: -15px;
     }
 
     &__about {
        text-align: justify;
        padding: 10px 50px;
-       margin-bottom: 300px;
     }
 
     &__hobby-image {
@@ -67,7 +90,7 @@
 
     &__heading {
         text-align: left;
-        margin: 120px 0px -20px 20px;
+        margin: 100px 0px -25px 25px;
 
         &--name-color {
             color: $main-color;
@@ -86,7 +109,7 @@
     &__job-name {
         font-size: 19px;
         text-align: left;
-        margin: 20px 0 170px 21px;
+        margin: 20px 0 100px 26px;
 
         &--underline {
             border-bottom: 2px solid $main-color;
@@ -123,13 +146,17 @@
         display: flex;
         flex-flow: row;
         text-align: left;
-        margin: 0 0 0 10px;
+        margin: 0 0 -55px 10px;
+
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 10px;
+        }
 
         > span {
             margin: 0 0 0 7%;
           
             > .date-icon-1 {
-                margin: 30px 0 130px 0;
+                margin: 30px 0 135px 0;
             }
         }
   
@@ -140,17 +167,18 @@
 
             &__date {
                 display: inline-block;
-                margin: 0px -300px 115px 20px;
+                margin: 0 -300px 115px 20px;
                 text-align-last: left;
 
                 @media only screen and (max-width: 1024px) {
-                    margin-left: -1%;
+                    margin: 0 -300px 115px -1%;
                 }
             }
 
             &__reference {
                 text-align: left;
                 margin: 0 0 0 50px;
+                min-width: 170px;
 
                 @media only screen and (max-width: 480px) {
                     margin: 0 0 0 40px;
@@ -161,42 +189,46 @@
         .right-info {
             float: right;
             text-align: left;
-            padding: 30px 0 0 300px;
+            padding: 30px 0 0 40%;
+            width: 100%;
 
             @media only screen and (max-width: 1024px) {
-                margin: 40px 0px 0px -100%;
-                padding-left: 100%;
+                margin: 40px 0 0 -40%;
+                float: none;
             }
 
             &__place {
                 text-align: left;
-                margin: 0px 0px 10px 0px;
+                margin: 0 0 10px 0;
                 display: inline-block;
                 font-weight: bold;
                 font-size: 17px;
                 letter-spacing: 0.3px;
+                min-width: 300px;
 
                 @media only screen and (max-width: 1024px) {
-                    margin-top: 5%;
+                    margin-top: -10px;
                 }
 
-                    &__2 {
-                        margin-top: 110px;
-                    }
+                &__2 {
+                    margin-top: 105px;
+                }
             }
         
             &__role {
                 text-align: left;
                 font-size: 15px;
                 letter-spacing: -0.3px;
+                min-width: 300px;
             }
 
             &__reference {
                 text-align: left;
                 margin: -10px 0 0 -150px;
+                min-width: 150px;
 
                 @media only screen and (max-width: 480px) {
-                    margin: 140px 0px 0px -153px !important;
+                    margin: 140px 0px 0 -172px !important;
                 }
 
                 @media only screen and (max-width: 1024px) {
@@ -205,4 +237,13 @@
             }
         }
     } 
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
 }
