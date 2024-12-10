@@ -1,4 +1,4 @@
-name: Generate API sitemap
+name: generate-sitemap
 
 on:
   push:
