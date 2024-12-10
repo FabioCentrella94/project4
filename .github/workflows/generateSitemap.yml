@@ -19,8 +19,7 @@ jobs:
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://project4.myportfolio.training/
-        path-to-root: .
+        base-url-path: https://project4.myportfolio.training
         include-pdf: false
         sitemap-format: xml
 
